@@ -24,10 +24,13 @@
       <section class="currency-form-container">
         <div class="currency-form">
           <label for="currency">Digite a moeda:</label>
-          <input id="currency" type="text" placeholder="USD" />
+          <input id="currency" type="text" placeholder="USD, BRL, EUR..." />
         </div>
         <button id="search">Pesquisar</button>
       </section>
+      <div class="tooltip">Informe a moeda corrente no formato  ISO 4217 <i class="fa-solid fa-question fa-xl"></i>
+        <p class="tooltiptext">É um padrão internacional que define códigos de três letras para as moedas correntes. Ex: BRL, EUR, USD, KRW.</p>
+    </div>
       <section id="currency-section">
         <h1 id="result"></h1>
         <ul id="currency-ul"></ul>
@@ -35,7 +38,7 @@
     </main>
     <footer>
       <a href="https://github.com/coelhoreinaldo" target="_blank"
-        ><i class="fa-brands fa-square-github fa-2xl" title="GitHub"></i
+        ><i id="github" class="fa-brands fa-square-github fa-2xl" title="GitHub"></i
       ></a>
     </footer>
     <script src="./src/main.js"></script>
